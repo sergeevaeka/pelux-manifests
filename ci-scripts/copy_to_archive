@@ -52,7 +52,7 @@ fi
 if [ -d ${IMAGE_DIR}/${RPI_ARCH} ]; then
     echo "Archiving RPI image to $ARCHIVE_DIR"
     mv ${IMAGE_DIR}/${RPI_ARCH}/${IMAGE_BASENAME}-*rootfs.rpi-sdimg $ARCHIVE_DIR
-    mv ${IMAGE_DIR}/${RPI_ARCH}/${IMAGE_BASENAME}-*.swu $ARCHIVE_DIR
+    mv ${IMAGE_DIR}/${RPI_ARCH}/${IMAGE_BASENAME}-dev-update-raspberrypi3-*.swu $ARCHIVE_DIR
 fi
 
 # Copy the SDK
