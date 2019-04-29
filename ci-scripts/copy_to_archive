@@ -47,6 +47,7 @@ fi
 if [ -d ${IMAGE_DIR}/${ARP_ARCH} ]; then
     echo "Archiving ARP image to $ARCHIVE_DIR"
     mv ${IMAGE_DIR}/${ARP_ARCH}/${IMAGE_BASENAME}-*rootfs.wic $ARCHIVE_DIR
+    mv ${IMAGE_DIR}/${ARP_ARCH}/${IMAGE_BASENAME}-*20*.swu $ARCHIVE_DIR
 fi
 
 # If there is an RPI directory
