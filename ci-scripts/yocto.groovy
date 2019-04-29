@@ -255,7 +255,7 @@ void buildManifest(String variantName, String imageName, String layerToReplace="
 
         // Build the images
         try {
-            boolean buildUpdate = variantName.startsWith("rpi") || variantName.startsWith("intel")
+            boolean buildUpdate = variantName.startsWith("rpi") || variantName.startsWith("intel") || variantName.startWith("arp-qtauto")
             buildImageAndSDK(yoctoDir, imageName, variantName, buildUpdate)
             if (yoctoCompatTest) {
                 runYoctoCheckLayer(yoctoDir)
