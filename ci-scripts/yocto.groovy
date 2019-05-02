@@ -162,7 +162,9 @@ void archiveImagesAndSDK(String yoctoDir, String suffix) {
         String artifactDir = "artifacts_${suffix}"
 
         sh "rm -rf ${artifactDir}"
+        sh "echo $?"
         sh "mkdir ${artifactDir}"
+        sh "echo $?"
         // Copy images and SDK to the synced directory
         vagrant("/vagrant/ci-scripts/copy_to_archive ${yoctoDir}/build /vagrant/${artifactDir}")
 
