@@ -44,6 +44,9 @@ if [ -d ${IMAGE_DIR}/${INTEL_ARCH} ]; then
 fi
 
 # If there is an ARP directory
+
+echo "${IMAGE_DIR}/${ARP_ARCH}"
+
 if [ -d ${IMAGE_DIR}/${ARP_ARCH} ]; then
     echo "Archiving ARP image to $ARCHIVE_DIR"
     mv ${IMAGE_DIR}/${ARP_ARCH}/${IMAGE_BASENAME}-*rootfs.wic $ARCHIVE_DIR
